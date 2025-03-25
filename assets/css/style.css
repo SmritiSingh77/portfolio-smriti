@@ -319,7 +319,29 @@ header {
     line-height: 1.6;
     text-align: justify;
 }
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 10px auto;
+    padding: 20px;
+    border-bottom: 1px solid var(--primary-color);
+    width: fit-content;
+}
+.contact-me a{
+    color: #000;
+}
+.contact-me a svg {
+    fill: var(--primary-color);
+    width: 24px;  /* Set fixed width */
+    height: 24px; /* Set fixed height */
+}
 
+.title svg {
+    width: 24px;
+    height: 24px;
+}
 /* responsive css */
 @media (max-width: 575px){
     .timeline-list {
