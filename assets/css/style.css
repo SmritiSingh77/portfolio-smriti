@@ -69,23 +69,17 @@ header {
 .hero-wrapper {
     height: 100vh;
     position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
 .hero-wrapper h1 {
     color: var(--primary-color);
     font-size: clamp(35px, 5vw, 56px);
-    text-align: center;
     font-weight: 400;
 }
 
 .para {
     color: var(--text-color);
     font-size: 16px;
-    text-align: center;
 }
 
 .title {
@@ -99,6 +93,9 @@ header {
     background: #f8f9fa;
     padding: 5px 15px;
     border-radius: 50px;
+    display: flex    ;
+        gap: 7px;
+        align-items: center;
 }
 
 .heading {
@@ -130,7 +127,10 @@ header {
     border-radius: 20px;
     transition: all 0.3s;
     padding: 20px;
-    margin: 20px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .project-item img {
@@ -342,7 +342,30 @@ header {
     width: 24px;
     height: 24px;
 }
+
+.hackathon-card{
+    height: 400px;
+}
+.hackathon-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    
+}
+
+
 /* responsive css */
+@media (max-width: 767px) {
+    .hero-wrapper {
+        height: fit-content;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }  
+    .wrapper-right{
+        margin-top: 50px;
+    }  
+}
 @media (max-width: 575px){
     .timeline-list {
         margin-left: 0;
